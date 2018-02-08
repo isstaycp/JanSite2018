@@ -1,69 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <title>My First HTML5 Web Page</title>
-    <!--
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style01.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="my first bootstrap html">
+    <meta name="keywords" content="HTML5, CSS3, bootstrap, Javascript, XML">
+    <meta name="author" content "iss stackup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>My BootStrap Home work Page</title>
 </head>
+
 <body>
-    <div id="wrapper">
-        <header>
-            <h1>Tagline Hoot Pte Ltd</h1>
+    <!-- overall container that contains the entire page layout -->
+    <div class="container-fluid">
+        <!-- header banner -->
+        <header class="jumbotron">
+            <h1>TitanWorks Pte Ltd</h1>
+            <p>My First Bootstrap</p>
         </header>
-        <nav>
-            <a href="#">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Experience</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Beliefs</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="contact.html">Contact</a>            
+        <!-- nav menu bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TitanWorks</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="bootstrap.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your search here.">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <article>
-            <section>
-                <h2>Brief Intro</h2>
-                <p>
-                    I am currently a professional in Tagline Hoot teaching "Coding". 
-                    It is a part-time course that teach HTML, CSS, Javascript and Bootstrap.
-                    I teach this course to impart my programming skills in web development.
-                    Hopefully, this will increase everyone's knowledge in the area.
 
-                </p>
-            </section>
-            <section>
-                <h2>Experience</h2>
-                <p>
-                    I like to do some programming after so many years in project management. 
-                    Programming seems more interesting. I like hands-on exercise in class.
-                    Learning data analtics will be my next goal. Text Mining, statistics and 
-                    tableau bootcamp. Who is the instructor for the course?
-                </p>
-            </section>
-        </article>
-        <aside>
-            <h3>Web Services</h3>
-            <ul>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Rates</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
-            <br>
-            <p>Tagline Hoot provides training and development in area of Website development</p>
-            <p>If you are interested in learning more about creating websites for your company, 
-                we can teach you or your staff, do call us to discuss!
-            </p>
-            <p>We hav experienced teachers who will train and guide you to develop and present your websites 
-                an a fresh look to attract your customers.
-                <a href="#">Contact us</a> for a quotation.
-            </p>
-        </aside>
+        <!-- section with two columns -->
+        <div class="container-fluid" style="background-color: green">
+            <div class="row">
+                <section class="col-xs-12 col-sm-8" style="background-color: white">
+                    <div style="padding: 0px 0px 0px 0px; width:100%; border: 0px solid black; border-radius: 5px;height:220px; ">
+                        <h2>Welcome to our Company!</h2>
+                        <p>
+                            TitwanWorks is the Today Times bestselling company of Titanic Cruises. We spent 20 years creating this company, where we
+                            created the Works Split process. We have since run it over 150 times with companies like Coffee,
+                            Pants, 65andYou, and Song Halth. Today, teams around the world (including the UK and the Netherland)
+                            use Titan Works to solve bigger issues and try out simple ideas.
+                        </p>
+                        <p>
+                            Previously, TitanWorks helped ship great products like Dictionaries, Shutouts Beers, and Geograpy Wines. We are currently
+                            among the world’s best companies to consult. Hopefully, this will increase everyone's knowledge
+                            in the area.
+                        </p>
+                        <p>Please feel free to browse the website and know us more. </p>
+                    </div>
+                </section>
+                <section class="col-xs-12 col-sm-4" style="background-color: white">
+                    <div style="padding: 0px 0px 0px 0px; width:80%; border: none solid black; border-radius: 5px; height:220px;">
+                        <h2>Our Services</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Cloud Computing</a>
+                            </li>
+                            <li>
+                                <a href="#">Big Data Analytics</a>
+                            </li>
+                            <li>
+                                <a href="#">Internet of Things</a>
+                            </li>
+                        </ul>
 
-        <footer>
-            Copyright &copy; Tagline Hoot Pte Ltd
-        </footer>
+                        <p>We have experienced teachers who will train and guide you to develop and present your websites an
+                            a fresh look to attract your customers.
+                            <a href="#">Contact us</a> for a quotation.
+                        </p>
 
-    </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- youtubue iframe -->
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-8">
+                    <p>
+                        <strong>Click the video below to know more about us!</strong>
+                    </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=false">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3> Happy Chinese New Year 2018!</h3>
+                    <!--
+                    <img class="img-responsive" src="./images/dog.jpg" style="width:100%;" alt = "dog">
+                    -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                      
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img class="img-responsive" src="./images/dog.jpg" style="width:100%;" alt = "dog">
+                          </div>
+                      
+                          <div class="item">
+                            <img class="img-responsive" src="./images/pig.jpg" style="width:100%;"alt="pig">
+                          </div>
+                      
+                          <div class="item">
+                            <img class="img-responsive" src="./images/rooster.jpg" style="width:100%;">
+                          </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+
+<!--
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/pig.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/dog.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/rooster.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/monkey.jpg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/goat.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/horse.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/snake.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="./images/dragon.jpg">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="./images/rabbit.jpg">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="./images/tiger.jpg">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="./images/ox.jpg">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="./images/rat.jpg">
+                    </div>
+                </div>
+            -->                
+                <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com">
+                                    <i class="fab fa-facebook-square fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com">
+                                    <i class="fab fa-google fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.snapchat.com">
+                                    <i class="fab fa-snapchat fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center">
+                Copyright &copy TitanWorks Pte Ltd.
+                <p>Disclaimer: This is a demo page for assignment.</p>
+            </footer>
+        </div>
+
 </body>
+
 </html>

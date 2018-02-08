@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <title>My First HTML5 Web Page</title>
-    <!--
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style01.css" />
-    <script src="main.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="my first bootstrap html">
+    <meta name="keywords" content="HTML5, CSS3, bootstrap, Javascript, XML">
+    <meta name="author" content "iss stackup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <title>My BootStrap Contact Work Page</title>
+    
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1>Tagline Hoot Pte Ltd</h1>
+    <!-- overall container that contains the entire page layout -->
+    <div class="container-fluid">
+        <!-- header banner -->
+        <header class="jumbotron">
+            <h1>TitanWorks Pte Ltd</h1>
+            <p>My First Bootstrap</p>
         </header>
-        <nav>
-            <a href="#">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Experience</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Beliefs</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Contact</a> 
-            
+        <!-- nav menu bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TitanWorks</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your query here.">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <article>
-            <section>
-                <form class="contact_form" action="#" method="POST" name="contact_form">
-                    <ul>
-                        <li>
-                            <h2>Contact Us</h2>
-                            <span class="required_notification">* Denote required fields</span>
-                            
-                        </li>
-                        <li>
-                            <label for="name">Name</label>
-                            <input type="text" maxlength = 10 placeholder = "Darryl Ng" id = "name" required />                            
-                            <span class="form_hint">Name is required</span>
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="someone@example.com" required />
-                            <span class="form_hint">Enter proper email format, ie someone@example.com</span>
-                        </li>
-                        <li>
-                            <label for="url">Website</label>
-                            <input type="url" placeholder="https://example.com" required pattern="(http|https)://.+" />
-                            <span class="form_hint">Enter valid url format</span>
-                        </li>
-                        <li>
-                            <label for="comments">Comments</label>
-                            <textarea name="message" cols="50" rows="10"></textarea>
-                        </li>
-                        <li>
-                            <button class="submit" type="submit">Submit Form</button>
-                        </li>
-                    </ul>
-                </form>
-            </section>
-        </article>
-        <aside>
-            <h3>Web Services</h3>
-            <ul>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Rates</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
-            <br>
-            <p>Tagline Hoot provides training and development in area of Website development</p>
-            <p>If you are interested in learning more about creating websites for your company, 
-                we can teach you or your staff, do call us to discuss!
-            </p>
-            <p>We hav experienced teachers who will train and guide you to develop and present your websites 
-                an a fresh look to attract your customers.
-                <a href="#">Contact us</a> for a quotation.
-            </p>
-        </aside>
+        <div class="container-fluid" style="background-color: white">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <section class="col-xs-12 col-sm-6" style="background-color: white">
+                    <div style="padding: 10px 10px 10px 10px; width:80%; border: 0px solid black; border-radius: 5px; height:440px;">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" maxlength = 10 placeholder = "Some Name ..." >
+                                <span class="form_hint">Name is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="someone@example.com" required >
+                                <span class="form_hint">Enter proper email format, ie someone@example.com</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Website:</label>
+                                <input type="url" class="form-control" id="website"  placeholder="https://example.com" required pattern="(http|https)://.+">
+                                <span class="form_hint">Enter valid url format</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment:</label>
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Your feedback..."></textarea>
+                              </div> 
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Subscribe to Newsletter?</label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </section>                
+            </div>
+        </div>        
+    </div>    
+    
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.facebook.com">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com">
+                            <i class="fab fa-google fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.snapchat.com">
+                            <i class="fab fa-snapchat fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
 
-        <footer>
-            Copyright &copy; Tagline Hoot Pte Ltd
-        </footer>
-
+            </div>
+        </div>
     </div>
+
+    <footer class="text-center">
+        Copyright &copy TitanWorks Pte Ltd. 
+        <p>Disclaimer: This is a demo page for assignment.</p>
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my first bootstrap html">
+    <meta name="keywords" content="HTML5, CSS3, bootstrap, Javascript, XML">
+    <meta name="author" content "iss stackup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>My BootStrap Home work Page</title>
+</head>
+
+<body>
+    <!-- overall container that contains the entire page layout -->
+    <div class="container-fluid">
+        <!-- header banner -->
+        <header class="jumbotron">
+            <h1>TitanWorks Pte Ltd</h1>
+            <p>My First Bootstrap</p>
+        </header>
+        <!-- nav menu bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TitanWorks</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your search here.">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <!-- 3 columns div -->
+            <div class="row">
+                <div class="col-xs-4">
+                    <h3>Cloud Computing</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                        like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <h3>Big Data Analytics</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                        like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+
+                </div>
+                <div class="col-xs-4">
+                    <h3>Internet of Things</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                        like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <!-- list group -->
+            <div class="row">
+                <div class="col-md-4 col-xs-12 panel panel-default">
+                    <h3 class="text-center">Operating hours</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday to Thursday</td>
+                                <td>0900 - 1700 hrs</td>
+                            </tr>
+                            <tr>
+                                <td>Friday and Saturday</td>
+                                <td>0900 - 1500 hrs</td>
+                            </tr>
+                        </tbody>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://goo.gl/KUBB7L">
+                        </iframe>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="padding: 0px 0px 0px 20px;border: 0px solid black;">
+                        <h3>Reach Out!</h3>
+                        <br>
+                        <div class="list-group" style="width:80%">
+                            <a href="#" class="list-group-item">
+                                <i class="fas fa-envelope fa-2x"></i> feedback@titanworks.com</a>
+                            <a href="#" class="list-group-item">
+                                <i class="fas fa-phone fa-2x"></i> +65 65162092</a>
+                            <a href="#" class="list-group-item">
+                                <i class="fab fa-twitter fa-2x"></i>titanworks.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com">
+                                <i class="fab fa-google fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com">
+                                <i class="fab fa-snapchat fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center">
+            Copyright &copy TitanWorks Pte Ltd.
+            <p>Disclaimer: This is a demo page for assignment.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
